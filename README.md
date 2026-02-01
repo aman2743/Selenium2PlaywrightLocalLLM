@@ -15,13 +15,13 @@ The system operates on a 3-layer architecture, running entirely on your local ma
 ```mermaid
 graph TD
     subgraph Client [Local User Environment]
-        User[👩‍💻 User]
-        Browser[🌐 Web Interface (React/Vite)]
+        User["👩‍💻 User"]
+        Browser["🌐 Web Interface (React/Vite)"]
     end
 
     subgraph Core [Local Processing Node]
-        Ollama[🦙 Ollama Service]
-        Model[🧠 CodeLlama:7b Model]
+        Ollama["🦙 Ollama Service"]
+        Model["🧠 CodeLlama:7b Model"]
     end
 
     User -->|Pastes Java Code| Browser
